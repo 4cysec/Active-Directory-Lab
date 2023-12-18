@@ -19,7 +19,7 @@ A domain controller server is established with Active-Directory Domain Services(
 
 <h2>Project walk-through:</h2>
 
-To view the detailed set up of the VM environment and lab please see Josh Madakor's youtube video <b>How to Setup a Basic Home Lab Running Active Directory (Oracle VirtualBox) | Add Users w/PowerShell</b> <a href=https://www.youtube.com/watch?v=MHsI8hJmggI&t=1065s>here</a> 
+To view the detailed set up of the VM environment and lab please see Josh Madakor's youtube video <b>How to Setup a Basic Home Lab Running Active Directory (Oracle VirtualBox) | Add Users w/PowerShell</b>  
 
 
 The Summary of the VM Environment is as follows:
