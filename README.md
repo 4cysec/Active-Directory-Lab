@@ -36,13 +36,13 @@ dragging and dropping of files between the host and virtual machines.
 
 Navigate to the Network configuration in the left pane--->Network
 
-Set Adaptor 1 to Attached to: NAT for the DC connection to the Internet
+Set Adapter 1 to Attached to: NAT for the DC connection to the Internet
 
 
 ![Screenshot 2023-12-22 201501](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/596577bd-7d05-4f68-9d5a-43fe385ebe21)
 
 
-Set Adaptor 2 to Attached to: Internal for the DC connection to the internal network
+Set Adapter 2 to Attached to: Internal for the DC connection to the internal network
 
 ![Screenshot 2023-12-22 201525](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/fd5e6729-5dcb-473b-9449-c7710eb97626)
 
@@ -50,6 +50,33 @@ Once the Server 2019 ISO is installed on the VM. The Domain Controller is config
 
 <p align="left"><b>Setup IP Addresses</b><br/>
 
+To set up IP addressing to our NICs for External and Internal network click internet
+icon bottom right corner of display. 
+
+![Screenshot 2023-12-22 214111](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/e0ef3084-2058-4446-8e08-80027034d4bb)
+
+
+![Screenshot 2023-12-22 214344](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/78353ba8-4621-4edd-b23e-64ab1cce3d36)
+
+
+![Screenshot 2023-12-22 215737](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/bf14e3bc-5b96-43c1-8515-f566bfcb86f5)
+
+
+
+
+-->Network Connections
+  -->Change Adapter Settings
+   -->Adapter1
+      -->details
+
+![Screenshot 2023-12-22 215830](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/73b08200-83db-48ee-9e86-94f50b28294d)
+
+
+      
+-->Adapter2
+      -->details
+
+![Screenshot 2023-12-22 215912](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/d7c8f2ae-113d-46fa-9e44-8e09c062a3f4)
 
 
 
