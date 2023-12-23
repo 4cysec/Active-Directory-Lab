@@ -66,17 +66,46 @@ icon bottom right corner of display.
 
 -->Network Connections
   -->Change Adapter Settings
-   -->Adapter1
+   -->Adapter1(Ethernet)
       -->details
 
 ![Screenshot 2023-12-22 215830](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/73b08200-83db-48ee-9e86-94f50b28294d)
 
 
       
--->Adapter2
+-->Adapter2(Ethernet2)
       -->details
 
 ![Screenshot 2023-12-22 215912](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/d7c8f2ae-113d-46fa-9e44-8e09c062a3f4)
+
+The Domain Controller will connect to the internet(external) through the home router
+thus the first ethernet IP can be considered the external IP.
+
+-->Right Click and rename the first adapter "Internet"
+
+The second adapter has an auto configured IP address. 
+
+The second adapter will face the internal network.
+
+-->Rename adapter2 "Internal Net"
+
+-->Go to properties within "Internal Net" adapter
+
+-->Click Internet Protocol Version 4 
+
+ ![Screenshot 2023-12-22 225407](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/f26a790f-e3b1-464a-8260-4e16ddb8803e)
+
+Using Josh Madakor's Tutorial network information, the following is entered:
+IP:  172.16.0.1
+Mask: 255.255.255.0
+DNS: 127.0.0.1
+
+The Domain Controller will act as a Gateway so no entry.
+
+Using default self pinging address for DNS. As DC will serve as the DNS.
+
+
+![Screenshot 2023-12-22 234137](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/b03f78bd-8138-460b-ab7f-0cdfece1d69a)
 
 
 
