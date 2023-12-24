@@ -102,7 +102,7 @@ DNS: 127.0.0.1
 
 The Domain Controller will act as a Gateway so no entry.
 
-Using default self pinging address for DNS. As DC will serve as the DNS.
+Using default "self pinging" address for DNS. As DC will serve as the DNS.
 
 
 ![Screenshot 2023-12-22 234137](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/b03f78bd-8138-460b-ab7f-0cdfece1d69a)
@@ -111,11 +111,60 @@ Using default self pinging address for DNS. As DC will serve as the DNS.
 
 <p align="left"><b>Install and Configure Active Directory Domain Services</b><br/>
 
+From the Server Manager Dashboard
+
+-->Go to Add roles and features
+
+![Screenshot 2023-12-23 232709](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/4a528cbc-fccc-40a8-8ef8-5e0a446bf9b5)
+
+[Before You Begin] --> Click Next
+
+[Installation Type] --> Select Role-based or feature based installation
+                    -->Click Next
+
+ [Server Selection] --> With Domain Controller and External IP selected Click Next                  
+                   
+                   
+![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/adc05821-d203-4845-b64f-b3428e4222d2)
+
+[Server Roles] --> Select Active Directory Domain Services
+               --> Click Add Features
+               --> Click Next
+
+ ![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/7b68a97d-3f29-4ae8-a1d9-113b003544f7)
+
+ [Features] --> Click Next(with pre selected boxes)
+
+ [AD DS] --> Click Next
+
+[Confirmation] -->Click Install
+
+After Installation of AD DS
+
+Click on alert notification and link "Promote this server to domain controller"
+
+![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/c9023405-2e0b-44bd-ada3-367a8c8fe6db)
+
+[Deployment Configuration]--> Select add a new forest
+    Provide a domain name. (Mydomainlab.com) used in this example.
+
+![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/712a6c34-ce24-4699-8bdb-caf9978554ee)
+
+[Domain Controller Options] --> Enter chosen password
+
+[DNS Options]--> Click Next(no selection)
+
+[Additional Options] --> Next
+
+[Paths] --> Next
+
+[Review Options] --> Next
+
+[Prerequisites Check]--> Install
 
 
 
-
-    
+   
 <!--
  ```diff
 - text in red
