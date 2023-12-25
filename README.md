@@ -19,6 +19,7 @@ A domain controller server is established with Active-Directory Domain Services(
 
 <h2>Project walk-through:</h2>
 
+
 To view the detailed set up of the VM environment and lab please see Josh Madakor's youtube video <b>How to Setup a Basic Home Lab Running Active Directory (Oracle VirtualBox) | Add Users w/PowerShell</b> at https://www.youtube.com/watch?v=MHsI8hJmggI
 
 
@@ -206,11 +207,13 @@ To make the new user an admin
 
 The new admin user jdoe was created and can now log into the domain as Jon Doe.
 
-<img src="![Screenshot 2023-12-25 001820](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/a403c71a-992f-444c-a612-77d8ea003651)" width="800" height="800">
+![Screenshot 2023-12-25 001820](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/a403c71a-992f-444c-a612-77d8ea003651) 
 
 
 
 <p align="left"><b>Internal Network Set Up</b><br/>
+
+
    
 <!--
  ```diff
