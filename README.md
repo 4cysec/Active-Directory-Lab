@@ -163,7 +163,54 @@ Click on alert notification and link "Promote this server to domain controller"
 [Prerequisites Check]--> Install
 
 
+<p align="left"><b>Creating Domain, Organizational Unit & New User</b><br/>
 
+After installation and reboot
+--> Click Start Icon
+   --> Windows Administrative Tools Folder
+     --> Click Active Directory Users and Computers
+The created domain can be seen in the left pane: mydomainlab.com
+
+![Screenshot 2023-12-24 221835](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/c05ec5fa-c31c-4f5c-992a-b71b2735fe71)
+
+
+--> Right Click domain(in this case mydomainlab.com)
+   -->New
+     --> Organizational Unit
+       -->Name the organizational unit(named _ADMINS in this lab)
+       
+
+![Screenshot 2023-12-24 222030](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/8a7735ae-166e-44f4-b031-e11298aa6b54)
+
+
+
+This creates a folder _ADMINS
+--> Right click _Admins
+  -->New
+    --> User
+ Fill user name, logon name and password(Jon Doe, a-jdoe for this lab)
+ For the purpose of the lab, "password never expires" was checked.
+
+ ![Screenshot 2023-12-24 230052](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/de956ef6-a055-4e67-821c-fec9d3635a44)
+
+To make the new user an admin
+-->Right click on the user
+  -->Properties
+    -->Member Of tab
+      -->Click Add
+         -->Name assigned user group(Domain Admins)
+           --> Apply
+             -->OK
+
+![Screenshot 2023-12-24 231838](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/2c849e27-a8a2-4f1b-8049-b7e369153915)
+
+The new admin user jdoe was created and can now log into the domain as Jon Doe.
+
+<img src="![Screenshot 2023-12-25 001820](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/a403c71a-992f-444c-a612-77d8ea003651)" width="800" height="800">
+
+
+
+<p align="left"><b>Internal Network Set Up</b><br/>
    
 <!--
  ```diff
