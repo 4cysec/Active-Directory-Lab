@@ -1,7 +1,7 @@
 <h1>Active-Directory-Lab</h1>
 
 <h2>Description</h2>
-A domain controller server is established with Active-Directory Domain Services(AD DS). Users are added manually and with a powershell script. The Domain Controller faces the internet while sharing an internal network with a Windows 10 client.  All of this is done within a virtual environment.
+A domain controller server is established with Active-Directory Domain Services(AD DS). Users are added manually and with a powershell script. The domain controller faces the internet while sharing an internal network with a Windows 10 client.  All of this is done within a virtual environment.
 
 <h2>Languages and Utilities Used</h2>
 
@@ -213,8 +213,52 @@ The new admin user jdoe was created and can now log into the domain as Jon Doe.
 
 <p align="left"><b>Internal Network Set Up</b><br/>
 
+Install Routing and Remote Access/Network Address Translation(NAT)
 
-   
+Will allow the client on the internal network to gain access to the external internet.
+
+On Server Manager Dashboard -->Add roles and features
+[Before You Begin] --> Next
+[Installation Type] with Role-based or featured-based installation selected --> Next
+[Server Selection] with server selected --> Next
+[Server Roles] select remote access --> Next
+[Features] --> Next
+[Remote Access] --> Next
+[Role Services] Select Routing -->Add Features
+DirectAccess and VPN(RAS) and Routing Selected --> Next
+[WebServer ROle (IIS)] --> Next
+[Role Services] --> Next
+[Confirmation] --> Install
+Close box after install
+
+![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/d3ea9f11-ace4-4aed-ac0b-1408c320dc85)
+
+On Server Manager Dashboard --> Tools (top right)
+
+![Screenshot 2023-12-30 021444](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/f7e6290f-01af-4c7a-9fb0-987d2b5bf511)
+
+Select domain controller name local(DomConlocal)
+-->Right Click on selection above
+  -->Configure and Enable Routing and Remote Access
+
+![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/5ace9e2f-aa39-4fdd-a825-d31480783e32)
+
+   --> Next
+
+Select Network address translation --> Next
+
+Select the Internet set up in previous steps as public interface --> Next
+
+![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/8f5d473b-c089-4fcc-ad3a-555fe761fada)
+
+--> Finish 
+
+Setting up DHCP
+
+DHCP will assign IP address to Client within internal network
+
+
+
 <!--
  ```diff
 - text in red
