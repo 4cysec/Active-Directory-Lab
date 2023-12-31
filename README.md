@@ -221,7 +221,7 @@ On Server Manager Dashboard -->Add roles and features
 [Before You Begin] --> Next
 [Installation Type] with Role-based or featured-based installation selected --> Next
 [Server Selection] with server selected --> Next
-[Server Roles] select remote access --> Next
+[Server Roles] select Remote Access --> Next
 [Features] --> Next
 [Remote Access] --> Next
 [Role Services] Select Routing -->Add Features
@@ -233,7 +233,7 @@ Close box after install
 
 ![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/d3ea9f11-ace4-4aed-ac0b-1408c320dc85)
 
-On Server Manager Dashboard --> Tools (top right)
+In Server Manager Dashboard --> Tools (top right)
 
 ![Screenshot 2023-12-30 021444](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/f7e6290f-01af-4c7a-9fb0-987d2b5bf511)
 
@@ -255,9 +255,65 @@ Select the Internet set up in previous steps as public interface --> Next
 
 Setting up DHCP
 
-DHCP will assign IP address to Client within internal network
+DHCP will assign IP address to the Windows clients within the internal network
+
+In Server Manager Dashboard --> Add roles and features
+[Before You Begin] --> Next
+[Installation Type] with Role-based or featured-based installation selected --> Next
+[Server Selection] with server selected --> Next
+[Server Roles] select DHCP server --> Add Features --> Next
+[Features] --> Next
+[DHCP Server] --> Next
+[Confirmation] --> Install
+Close box after install
+
+In Server Manager Dashboard --> Tools(top right menu)
+                            --> DHCP
+Select Domain(Expands Directory)-->Right click IPv4
+                                --> New Scope --> Next
+Provide name. In this case the IP Address range from Josh Madakor's example
+ -->172.16.01.100-200 --> Next
+ Start IP: 172.16.01.100
+ End IP:  172.16.01.200
+ Length:  24
+ Subnet Mask: 255.255.255.0
+
+![Screenshot 2023-12-30 180751](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/6478eda9-50af-4de4-bd19-93d0b9a34362)
+
+![Screenshot 2023-12-30 181029](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/d864b0d7-42dc-4086-832c-2ff3e7fb0f86)
+
+--> Next
+[Add Exclusions and Delay] --> Next
+
+[Lease Duration] 8 days pre selected as duration of time assigned IP addressing is valid for clients
+               --> Next
+[Configure DHCP Options] Yes...selected --> Next
+
+[Router (Default Gateway)] The domain controller will act as the router of network traffic from 
+the internal network to the Internet. Thus, the IP address of the DC Server is used.
+-->172.16.0.1 -->Add--> Next
+
+![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/c49d8d59-ab1f-4a50-a463-c52fc6e35359)
+
+[Domain Name and DNS Servers] The DC Server with Active Directory Domain Services acts as the DNS
+                              --> Next
+[WINS Servers] --> Next
+
+[Activate Scope] Yes...selected --> Next --> Finish
+
+In DHCP Box --> Right Click DC directory-->Click Authorize
+           
+![Screenshot 2023-12-30 185140](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/30898304-d725-44c3-b65f-f7b2d9413671)
+
+             --> Right Click DC directory--> Refresh
+
+Green check marks on IPv4/IPv6 icons indicate successful configuration.
+
+_____________________________________________________________________________________________________________________________________________________________________
 
 
+
+            
 
 <!--
  ```diff
