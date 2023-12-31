@@ -49,7 +49,7 @@ Set Adapter 2 to Attached to: Internal for the DC connection to the internal net
 
 Once the Server 2019 ISO is installed on the VM. The Domain Controller is configured below.
 
-<p align="left"><b>Setup IP Addresses</b><br/>
+<p align="center"><b>Setup IP Addresses</b><br/>
 
 To set up IP addressing to our NICs for External and Internal network click internet
 icon bottom right corner of display. 
@@ -209,7 +209,7 @@ The new admin user jdoe was created and can now log into the domain as Jon Doe.
 
 ![Screenshot 2023-12-25 001820](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/a403c71a-992f-444c-a612-77d8ea003651) 
 
-
+___________________________________________________________________________________________________________________________________________________________________________
 
 <p align="left"><b>Internal Network Set Up</b><br/>
 
@@ -305,15 +305,59 @@ In DHCP Box --> Right Click DC directory-->Click Authorize
            
 ![Screenshot 2023-12-30 185140](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/30898304-d725-44c3-b65f-f7b2d9413671)
 
-             --> Right Click DC directory--> Refresh
+            
+--> Right Click DC directory--> Refresh
+
 
 Green check marks on IPv4/IPv6 icons indicate successful configuration.
 
+
 _____________________________________________________________________________________________________________________________________________________________________
 
+<p align="center"><b>User Additions Using Powershell Script</b><br/>
+
+Using Josh Madakor's powershell script and a notepad file with generated user names(seen below),
+new users will be added to the directory in an automated fashion. This greatly shortens 
+time in comparison to adding users manually.
+
+![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/3a0d1475-bf56-40f9-81b8-38ac47a4186a)
+
+  In Windows
+  --> Start 
+      --> Windows Powershell
+          --> Right Click Windows Powershell ISE          
+            --> More 
+               --> Run as administrator
+For the purpose of the lab, security will be bypassed to execute script with the following:
+
+PS C:\Windows\system32>Set-ExecutionPolicy Unrestricted --> Enter
+
+--> Click Yes to All
+
+![Screenshot 2023-12-30 221327](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/c2289641-0534-4fa6-a16a-557be9399034)
+
+--> Click Open Script Folder
+  --> Select Create Users script file
+
+Navigate to location of script file(Desktop of user Jon Doe in this example)
+
+--> Click Run Script
+
+![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/8e64d752-5a2a-4d57-be04-193e34d857ac)
 
 
-            
+![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/134c774e-185b-4c22-baa6-62f67676e9fb)
+
+Navigating back to the Active Directory, a new Users folder was created and is populated with the added
+users
+
+![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/8d478ce4-cc94-48c6-bdd1-52a96b7e76ad)
+
+_____________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
 
 <!--
  ```diff
