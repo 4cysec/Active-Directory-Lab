@@ -311,6 +311,12 @@ In DHCP Box --> Right Click DC directory-->Click Authorize
 
 Green check marks on IPv4/IPv6 icons indicate successful configuration.
 
+Under IPv4 directory-->Select and right click Server Options-->Configure Options
+
+-->Check box 003 Router option
+
+-->Add domain controller's IP address as gateway: 172.16.0.1 for this lab -->Add--> Apply
+
 
 _____________________________________________________________________________________________________________________________________________________________________
 
@@ -354,6 +360,39 @@ users
 ![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/8d478ce4-cc94-48c6-bdd1-52a96b7e76ad)
 
 _____________________________________________________________________________________________________________________________________________________________________________
+
+<p align="center"><b>Adding A Windows Client</b><br/>
+
+Now the virtual Windows 10 computer will be added to our system.  This is the same as a business/corporate
+computer or laptop that is a part of the business's network.
+
+![Screenshot 2023-12-31 201641](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/daecd6a8-a0d2-4463-bc2a-f41f98d72025)
+
+In the Virtual Box Manager -->Click New
+                          --> Provide Name(Windows Client1)
+                          -->Choose Windows ISO file location(skip unattended installation checked)
+                          -->Windows 10 64 bit in dropdown(Iff applicable. It may be auto configured)
+                          -->Next
+    Choose hardware and disk configurations and click finish.
+
+With the Windows VM highlighted, go to settings-->Advanced Tab
+
+Selecting Bidirectional for Shared Clipboard and Drag 'n' Drop allows for copying and pasting and 
+dragging and dropping of files between the host and virtual machines.
+
+Navigate to the Network in the left pane--->Network
+
+Set Adapter 1 to Attached to: "Internal" for the client's connection to the internal network
+
+Run the Windows Clien1 VM
+
+Navigate through the Windows Setup screens for installation of Windows 1
+
+Note:  In this lab "No product key" option is picked. Furthermore, Windows 10 Pro version is 
+       installed. Custom Copy is installed as the virtual PC is blank.
+
+When setting up Windows after installation for this lab, no internet, limited set up, and 
+username of "User" without any password is chosen.
 
 
 
