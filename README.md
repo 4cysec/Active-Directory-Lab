@@ -30,22 +30,34 @@ Go to settings-->Advanced Tab
 Selecting Bidirectional for Shared Clipboard and Drag 'n' Drop allows for copying and pasting and 
 dragging and dropping of files between the host and virtual machines.
 
-![Screenshot 2023-12-22 194535](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/99ed1965-aee3-47a2-ae19-db3182551cc5)
+
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/99ed1965-aee3-47a2-ae19-db3182551cc5" width="500" height="300" />
+     
+                                                                                                                                          
 
 
-![Screenshot 2023-12-22 195730](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/e09cd02d-f9ff-45f8-93dc-dc8569e5de8b)
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/e09cd02d-f9ff-45f8-93dc-dc8569e5de8b" width="500" height="300" />
+
+
+
+
+
 
 Navigate to the Network configuration in the left pane--->Network
 
 Set Adapter 1 to Attached to: NAT for the DC connection to the Internet
 
 
-![Screenshot 2023-12-22 201501](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/596577bd-7d05-4f68-9d5a-43fe385ebe21)
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/596577bd-7d05-4f68-9d5a-43fe385ebe21" width="500" height="300" />
+
 
 
 Set Adapter 2 to Attached to: Internal for the DC connection to the internal network
 
-![Screenshot 2023-12-22 201525](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/fd5e6729-5dcb-473b-9449-c7710eb97626)
+
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/fd5e6729-5dcb-473b-9449-c7710eb97626" width="500" height="300" />
+
+
 
 Once the Server 2019 ISO is installed on the VM. The Domain Controller is configured below.
 
