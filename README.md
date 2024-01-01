@@ -384,7 +384,7 @@ Navigate to the Network in the left pane--->Network
 
 Set Adapter 1 to Attached to: "Internal" for the client's connection to the internal network
 
-Run the Windows Clien1 VM
+Run the Windows Client1 VM
 
 Navigate through the Windows Setup screens for installation of Windows 1
 
@@ -394,7 +394,42 @@ Note:  In this lab "No product key" option is picked. Furthermore, Windows 10 Pr
 When setting up Windows after installation for this lab, no internet, limited set up, and 
 username of "User" without any password is chosen.
 
+After Installation run Windows Client1 machine
 
+Network Connectivity can be checked:
+
+Open command prompt type CMD in search prompt in Windows.
+
+ping www.yahoo.com(or any website) for response.
+
+![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/02613fc0-1431-478b-a8a2-63f59074be0a)
+
+Reply indicates connectivity is successful.
+
+Renaming/Joining the Domain is done as follows:
+
+Right Click Start-->System-->Rename This PC(Advanced) --> Change
+
+Computer Name: WindowsClient1
+
+Domain: mydomainlab.com
+
+--> Ok
+
+![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/2d1bdbca-1036-4879-a103-8d4d56c8b870)
+
+Username/Password is entered using admin credentials from the DC. a-jdoe/Password1
+
+After the set up, it is now possible to sign into the WindowsClient1 host with one of our previously generated
+accounts.
+
+Choosing user John Bartram and signing in as other user into mydomainlab.com. 
+
+
+![Screenshot 2023-12-31 224634](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/e328a5f9-1d67-4402-83f7-ce94f1accb09)
+
+
+![Screenshot 2023-12-31 224651](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/d39896f1-40be-46d4-a66e-c8cc703838d3)
 
 
 
