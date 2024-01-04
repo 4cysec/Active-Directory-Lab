@@ -219,7 +219,7 @@ The created domain can be seen in the left pane: mydomainlab.com
 
 
 This creates a folder _ADMINS
---> Right click _Admins
+--> Right click _ADMINS
   -->New
     --> User
  Fill user name, logon name and password(Jon Doe, a-jdoe for this lab)
@@ -262,7 +262,7 @@ On Server Manager Dashboard -->Add roles and features
 [Server Roles] select Remote Access --> Next
 [Features] --> Next
 [Remote Access] --> Next
-[Role Services] Select Routing -->Add Features
+[Role Services] Select Routing -->Add Features-->
 DirectAccess and VPN(RAS) and Routing Selected --> Next
 [WebServer ROle (IIS)] --> Next
 [Role Services] --> Next
@@ -273,7 +273,7 @@ Close box after install
 <img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/d3ea9f11-ace4-4aed-ac0b-1408c320dc85" width="500" height="300" />
 
 
-In Server Manager Dashboard --> Tools (top right)
+In Server Manager Dashboard --> Tools (top right) -->Routing and Remote Access
 
 
 <img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/f7e6290f-01af-4c7a-9fb0-987d2b5bf511" width="500" height="300" />
