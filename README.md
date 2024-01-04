@@ -41,8 +41,6 @@ dragging and dropping of files between the host and virtual machines.
 
 
 
-
-
 Navigate to the Network configuration in the left pane--->Network
 
 Set Adapter 1 to Attached to: NAT for the DC connection to the Internet
@@ -61,19 +59,26 @@ Set Adapter 2 to Attached to: Internal for the DC connection to the internal net
 
 Once the Server 2019 ISO is installed on the VM. The Domain Controller is configured below.
 
-<p align="center"><b>Setup IP Addresses</b><br/>
+___________________________________________________________________________________________________________________________________________________________________
+
+<p align="center"><b>Setting up IP Addresses</b><br/>
+
+
 
 To set up IP addressing to our NICs for External and Internal network click internet
-icon bottom right corner of display. 
-
-![Screenshot 2023-12-22 214111](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/e0ef3084-2058-4446-8e08-80027034d4bb)
+icon in the bottom right corner of display. 
 
 
-![Screenshot 2023-12-22 214344](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/78353ba8-4621-4edd-b23e-64ab1cce3d36)
+
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/e0ef3084-2058-4446-8e08-80027034d4bb" width="500" height="300" />
 
 
-![Screenshot 2023-12-22 215737](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/bf14e3bc-5b96-43c1-8515-f566bfcb86f5)
 
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/78353ba8-4621-4edd-b23e-64ab1cce3d36" width="500" height="300" />
+
+
+
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/bf14e3bc-5b96-43c1-8515-f566bfcb86f5" width="500" height="300" />
 
 
 
@@ -82,14 +87,18 @@ icon bottom right corner of display.
    -->Adapter1(Ethernet)
       -->details
 
-![Screenshot 2023-12-22 215830](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/73b08200-83db-48ee-9e86-94f50b28294d)
+
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/73b08200-83db-48ee-9e86-94f50b28294d" width="500" height="300" />
+      
+
 
 
       
 -->Adapter2(Ethernet2)
       -->details
 
-![Screenshot 2023-12-22 215912](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/d7c8f2ae-113d-46fa-9e44-8e09c062a3f4)
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/d7c8f2ae-113d-46fa-9e44-8e09c062a3f4" width="500" height="300" />
+
 
 The Domain Controller will connect to the internet(external) through the home router
 thus the first ethernet IP can be considered the external IP.
@@ -106,7 +115,8 @@ The second adapter will face the internal network.
 
 -->Click Internet Protocol Version 4 
 
- ![Screenshot 2023-12-22 225407](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/f26a790f-e3b1-464a-8260-4e16ddb8803e)
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/f26a790f-e3b1-464a-8260-4e16ddb8803e" width="500" height="300" />
+ 
 
 Using Josh Madakor's Tutorial network information, the following is entered:
 IP:  172.16.0.1
@@ -118,17 +128,19 @@ The Domain Controller will act as a Gateway so no entry.
 Using default "self pinging" address for DNS. As DC will serve as the DNS.
 
 
-![Screenshot 2023-12-22 234137](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/b03f78bd-8138-460b-ab7f-0cdfece1d69a)
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/b03f78bd-8138-460b-ab7f-0cdfece1d69a" width="500" height="300" />
+
+________________________________________________________________________________________________________________________________________________________________________
 
 
-
-<p align="left"><b>Install and Configure Active Directory Domain Services</b><br/>
+<p align="center"><b>Install and Configure Active Directory Domain Services</b><br/>
 
 From the Server Manager Dashboard
 
 -->Go to Add roles and features
 
-![Screenshot 2023-12-23 232709](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/4a528cbc-fccc-40a8-8ef8-5e0a446bf9b5)
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/4a528cbc-fccc-40a8-8ef8-5e0a446bf9b5" width="500" height="300" />
+
 
 [Before You Begin] --> Click Next
 
@@ -137,14 +149,17 @@ From the Server Manager Dashboard
 
  [Server Selection] --> With Domain Controller and External IP selected Click Next                  
                    
-                   
-![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/adc05821-d203-4845-b64f-b3428e4222d2)
+ 
+ <img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/adc05821-d203-4845-b64f-b3428e4222d2" width="500" height="300" />                  
+
 
 [Server Roles] --> Select Active Directory Domain Services
                --> Click Add Features
                --> Click Next
+               
 
- ![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/7b68a97d-3f29-4ae8-a1d9-113b003544f7)
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/7b68a97d-3f29-4ae8-a1d9-113b003544f7" width="500" height="300" />
+ 
 
  [Features] --> Click Next(with pre selected boxes)
 
@@ -156,12 +171,14 @@ After Installation of AD DS
 
 Click on alert notification and link "Promote this server to domain controller"
 
-![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/c9023405-2e0b-44bd-ada3-367a8c8fe6db)
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/c9023405-2e0b-44bd-ada3-367a8c8fe6db" width="500" height="300" />
+
 
 [Deployment Configuration]--> Select add a new forest
     Provide a domain name. (Mydomainlab.com) used in this example.
 
-![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/712a6c34-ce24-4699-8bdb-caf9978554ee)
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/712a6c34-ce24-4699-8bdb-caf9978554ee" width="500" height="300" />
+
 
 [Domain Controller Options] --> Enter chosen password
 
@@ -175,8 +192,9 @@ Click on alert notification and link "Promote this server to domain controller"
 
 [Prerequisites Check]--> Install
 
+______________________________________________________________________________________________________________________________________________________________________
 
-<p align="left"><b>Creating Domain, Organizational Unit & New User</b><br/>
+<p align="center"><b>Creating Domain, Organizational Unit & New User</b><br/>
 
 After installation and reboot
 --> Click Start Icon
@@ -184,16 +202,19 @@ After installation and reboot
      --> Click Active Directory Users and Computers
 The created domain can be seen in the left pane: mydomainlab.com
 
-![Screenshot 2023-12-24 221835](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/c05ec5fa-c31c-4f5c-992a-b71b2735fe71)
+
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/c05ec5fa-c31c-4f5c-992a-b71b2735fe71" width="500" height="300" />
+
 
 
 --> Right Click domain(in this case mydomainlab.com)
    -->New
      --> Organizational Unit
        -->Name the organizational unit(named _ADMINS in this lab)
-       
 
-![Screenshot 2023-12-24 222030](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/8a7735ae-166e-44f4-b031-e11298aa6b54)
+
+       
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/8a7735ae-166e-44f4-b031-e11298aa6b54" width="500" height="300" />
 
 
 
@@ -204,7 +225,9 @@ This creates a folder _ADMINS
  Fill user name, logon name and password(Jon Doe, a-jdoe for this lab)
  For the purpose of the lab, "password never expires" was checked.
 
- ![Screenshot 2023-12-24 230052](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/de956ef6-a055-4e67-821c-fec9d3635a44)
+
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/de956ef6-a055-4e67-821c-fec9d3635a44" width="500" height="300" />
+ 
 
 To make the new user an admin
 -->Right click on the user
@@ -215,15 +238,18 @@ To make the new user an admin
            --> Apply
              -->OK
 
-![Screenshot 2023-12-24 231838](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/2c849e27-a8a2-4f1b-8049-b7e369153915)
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/2c849e27-a8a2-4f1b-8049-b7e369153915" width="500" height="300" />
+
 
 The new admin user jdoe was created and can now log into the domain as Jon Doe.
 
-![Screenshot 2023-12-25 001820](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/a403c71a-992f-444c-a612-77d8ea003651) 
+
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/a403c71a-992f-444c-a612-77d8ea003651" width="500" height="300" />
+
 
 ___________________________________________________________________________________________________________________________________________________________________________
 
-<p align="left"><b>Internal Network Set Up</b><br/>
+<p align="center"><b>Internal Network Set Up</b><br/>
 
 Install Routing and Remote Access/Network Address Translation(NAT)
 
@@ -243,17 +269,23 @@ DirectAccess and VPN(RAS) and Routing Selected --> Next
 [Confirmation] --> Install
 Close box after install
 
-![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/d3ea9f11-ace4-4aed-ac0b-1408c320dc85)
+
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/d3ea9f11-ace4-4aed-ac0b-1408c320dc85" width="500" height="300" />
+
 
 In Server Manager Dashboard --> Tools (top right)
 
-![Screenshot 2023-12-30 021444](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/f7e6290f-01af-4c7a-9fb0-987d2b5bf511)
+
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/f7e6290f-01af-4c7a-9fb0-987d2b5bf511" width="500" height="300" />
+
 
 Select domain controller name local(DomConlocal)
 -->Right Click on selection above
   -->Configure and Enable Routing and Remote Access
 
-![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/5ace9e2f-aa39-4fdd-a825-d31480783e32)
+
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/5ace9e2f-aa39-4fdd-a825-d31480783e32" width="500" height="300" />
+
 
    --> Next
 
@@ -261,7 +293,9 @@ Select Network address translation --> Next
 
 Select the Internet set up in previous steps as public interface --> Next
 
-![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/8f5d473b-c089-4fcc-ad3a-555fe761fada)
+
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/8f5d473b-c089-4fcc-ad3a-555fe761fada" width="500" height="300" />
+
 
 --> Finish 
 
@@ -290,9 +324,12 @@ Provide name. In this case the IP Address range from Josh Madakor's example
  Length:  24
  Subnet Mask: 255.255.255.0
 
-![Screenshot 2023-12-30 180751](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/6478eda9-50af-4de4-bd19-93d0b9a34362)
 
-![Screenshot 2023-12-30 181029](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/d864b0d7-42dc-4086-832c-2ff3e7fb0f86)
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/6478eda9-50af-4de4-bd19-93d0b9a34362" width="500" height="300" />
+
+
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/d864b0d7-42dc-4086-832c-2ff3e7fb0f86" width="500" height="300" />
+
 
 --> Next
 [Add Exclusions and Delay] --> Next
@@ -305,7 +342,9 @@ Provide name. In this case the IP Address range from Josh Madakor's example
 the internal network to the Internet. Thus, the IP address of the DC Server is used.
 -->172.16.0.1 -->Add--> Next
 
-![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/c49d8d59-ab1f-4a50-a463-c52fc6e35359)
+
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/c49d8d59-ab1f-4a50-a463-c52fc6e35359" width="500" height="300" />
+
 
 [Domain Name and DNS Servers] The DC Server with Active Directory Domain Services acts as the DNS
                               --> Next
@@ -314,8 +353,9 @@ the internal network to the Internet. Thus, the IP address of the DC Server is u
 [Activate Scope] Yes...selected --> Next --> Finish
 
 In DHCP Box --> Right Click DC directory-->Click Authorize
-           
-![Screenshot 2023-12-30 185140](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/30898304-d725-44c3-b65f-f7b2d9413671)
+
+
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/30898304-d725-44c3-b65f-f7b2d9413671" width="500" height="300" />           
 
             
 --> Right Click DC directory--> Refresh
@@ -338,7 +378,9 @@ Using Josh Madakor's powershell script and a notepad file with generated user na
 new users will be added to the directory in an automated fashion. This greatly shortens 
 time in comparison to adding users manually.
 
-![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/3a0d1475-bf56-40f9-81b8-38ac47a4186a)
+
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/3a0d1475-bf56-40f9-81b8-38ac47a4186a" width="500" height="300" />
+
 
   In Windows
   --> Start 
@@ -352,7 +394,9 @@ PS C:\Windows\system32>Set-ExecutionPolicy Unrestricted --> Enter
 
 --> Click Yes to All
 
-![Screenshot 2023-12-30 221327](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/c2289641-0534-4fa6-a16a-557be9399034)
+
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/c2289641-0534-4fa6-a16a-557be9399034" width="500" height="300" />
+
 
 --> Click Open Script Folder
   --> Select Create Users script file
@@ -361,15 +405,18 @@ Navigate to location of script file(Desktop of user Jon Doe in this example)
 
 --> Click Run Script
 
-![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/8e64d752-5a2a-4d57-be04-193e34d857ac)
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/8e64d752-5a2a-4d57-be04-193e34d857ac" width="500" height="300" />
 
 
-![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/134c774e-185b-4c22-baa6-62f67676e9fb)
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/134c774e-185b-4c22-baa6-62f67676e9fb" width="500" height="300" />
+
 
 Navigating back to the Active Directory, a new Users folder was created and is populated with the added
 users
 
-![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/8d478ce4-cc94-48c6-bdd1-52a96b7e76ad)
+
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/8d478ce4-cc94-48c6-bdd1-52a96b7e76ad" width="500" height="300" />
+
 
 _____________________________________________________________________________________________________________________________________________________________________________
 
@@ -378,7 +425,9 @@ ________________________________________________________________________________
 Now the virtual Windows 10 computer will be added to our system.  This is the same as a business/corporate
 computer or laptop that is a part of the business's network.
 
-![Screenshot 2023-12-31 201641](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/daecd6a8-a0d2-4463-bc2a-f41f98d72025)
+
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/daecd6a8-a0d2-4463-bc2a-f41f98d72025" width="500" height="300" />
+
 
 In the Virtual Box Manager -->Click New
                           --> Provide Name(Windows Client1)
@@ -412,9 +461,11 @@ Network Connectivity can be checked:
 
 Open command prompt type CMD in search prompt in Windows.
 
-ping www.yahoo.com(or any website) for response.
+ping a website for response ex. www.yahoo.com
 
-![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/02613fc0-1431-478b-a8a2-63f59074be0a)
+
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/02613fc0-1431-478b-a8a2-63f59074be0a" width="500" height="300" />
+
 
 Reply indicates connectivity is successful.
 
@@ -428,7 +479,9 @@ Domain: mydomainlab.com
 
 --> Ok
 
-![image](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/2d1bdbca-1036-4879-a103-8d4d56c8b870)
+
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/2d1bdbca-1036-4879-a103-8d4d56c8b870" width="500" height="300" />
+
 
 Username/Password is entered using admin credentials from the DC. a-jdoe/Password1
 
@@ -438,10 +491,11 @@ accounts.
 Choosing user John Bartram and signing in as other user into mydomainlab.com. 
 
 
-![Screenshot 2023-12-31 224634](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/e328a5f9-1d67-4402-83f7-ce94f1accb09)
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/e328a5f9-1d67-4402-83f7-ce94f1accb09" width="500" height="300" />
 
 
-![Screenshot 2023-12-31 224651](https://github.com/4cysec/Active-Directory-Lab/assets/149924544/d39896f1-40be-46d4-a66e-c8cc703838d3)
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/d39896f1-40be-46d4-a66e-c8cc703838d3" width="500" height="300" />
+
 
 
 
