@@ -97,7 +97,7 @@ icon in the bottom right corner of display.
 -->Adapter2(Ethernet2)
       -->details
 
-<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/d7c8f2ae-113d-46fa-9e44-8e09c062a3f4" width="500" height="300" />
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/d7c8f2ae-113d-46fa-9e44-8e09c062a3f4" width="500" height="400" />
 
 
 The Domain Controller will connect to the internet(external) through the home router
@@ -115,7 +115,7 @@ The second adapter will face the internal network.
 
 -->Click Internet Protocol Version 4 
 
-<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/f26a790f-e3b1-464a-8260-4e16ddb8803e" width="500" height="300" />
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/f26a790f-e3b1-464a-8260-4e16ddb8803e" width="500" height="400" />
  
 
 Using Josh Madakor's Tutorial network information, the following is entered:
@@ -128,7 +128,7 @@ The Domain Controller will act as a Gateway so no entry.
 Using default "self pinging" address for DNS. As DC will serve as the DNS.
 
 
-<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/b03f78bd-8138-460b-ab7f-0cdfece1d69a" width="500" height="300" />
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/b03f78bd-8138-460b-ab7f-0cdfece1d69a" width="500" height="400" />
 
 ___________________________________________________________________________________________________________________________________________________________
 
