@@ -379,7 +379,7 @@ new users will be added to the directory in an automated fashion. This greatly s
 time in comparison to adding users manually.
 
 
-<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/3a0d1475-bf56-40f9-81b8-38ac47a4186a" width="500" height="300" />
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/3a0d1475-bf56-40f9-81b8-38ac47a4186a" width="500" height="425" />
 
 
   In Windows
