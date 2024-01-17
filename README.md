@@ -480,7 +480,7 @@ Domain: mydomainlab.com
 --> Ok
 
 
-<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/2d1bdbca-1036-4879-a103-8d4d56c8b870" width="500" height="300" />
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/2d1bdbca-1036-4879-a103-8d4d56c8b870" width="500" height="400" />
 
 
 Username/Password is entered using admin credentials from the DC. a-jdoe/Password1
@@ -491,10 +491,10 @@ accounts.
 Choosing user John Bartram and signing in as other user into mydomainlab.com. 
 
 
-<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/e328a5f9-1d67-4402-83f7-ce94f1accb09" width="500" height="300" />
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/e328a5f9-1d67-4402-83f7-ce94f1accb09" width="500" height="400" />
 
 
-<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/d39896f1-40be-46d4-a66e-c8cc703838d3" width="500" height="300" />
+<img src="https://github.com/4cysec/Active-Directory-Lab/assets/149924544/d39896f1-40be-46d4-a66e-c8cc703838d3" width="500" height="400" />
 
 
 
